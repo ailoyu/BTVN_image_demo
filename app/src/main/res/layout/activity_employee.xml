@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EmployeeActivity">
+
+    <Button
+        android:id="@+id/exit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="Exit" />
+
+    <ImageView
+        android:id="@+id/avatarView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row = "1"
+        android:layout_gravity="left|top"
+        android:src="@drawable/avatar" />
+
+    <Button
+        android:id = "@+id/bt_changeAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="center|top"
+        android:text="Change avatar" />
+
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_column = "2"
+        android:layout_row = "1"
+        android:orientation = "vertical">
+
+        <EditText
+            android:id="@+id/et_employeeID"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Code" />
+
+        <EditText
+            android:id="@+id/et_employeeName"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:hint="Enter the Name" />
+        <LinearLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text = "Gender"
+                android:textSize = "20dp"
+                />
+            <RadioGroup
+                android:id="@+id/radioGroup_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation = "horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/radioButton_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Famale" />
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_employeePhoneNumber"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:inputType = "phone"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center|top"
+        android:hint="Enter the address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Choose Department"
+        android:layout_column = "1"
+        android:layout_row = "4"
+        android:layout_gravity = "left|top"
+        android:textSize = "20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_department"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:layout_gravity="right|top"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column = "1"
+        android:layout_row = "5"
+        android:layout_columnSpan = "2">
+
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="SELECT" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="DELETE" />
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="UPDATE" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_columnSpan="2" />
+
+</GridLayout>

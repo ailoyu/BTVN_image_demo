@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DepartmentActivity">
+
+    <Button
+        android:id="@+id/btExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="EXIT"
+        android:textSize="23dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/et_departmentID"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the code"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_departmentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a department name"
+            />
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD"
+            android:textSize="14dp"
+            />
+
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="wrap_content">
+        </Space>
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:textSize="14dp"
+            />
+
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="wrap_content">
+        </Space>
+
+        <Button
+            android:id="@+id/btUpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:textSize="14dp"
+            />
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="wrap_content">
+        </Space>
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delete"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3" />
+
+
+</LinearLayout>
