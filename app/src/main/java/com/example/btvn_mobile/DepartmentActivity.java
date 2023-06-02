@@ -107,6 +107,18 @@ public class DepartmentActivity extends AppCompatActivity {
                 et_phoneNumber.setText(department.getPhoneNumber());
             }
         });
+
+
+        bt_exit = (Button) findViewById(R.id.exit_bt);
+        bt_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+
+
     }
 
     @Override

@@ -35,7 +35,7 @@ public class EmployeeActivity extends AppCompatActivity {
     ArrayList<Department> listDepartment;
     ImageView imageview;
     DatabaseHelper dbHelper = new DatabaseHelper(this);
-    Button bt_changeAvatar, bt_select, bt_save, bt_delete, bt_update;
+    Button bt_changeAvatar, bt_select, bt_save, bt_delete, bt_update, bt_exit;
     EditText et_employeeId, et_employeeName, et_phoneNumber, et_address;
     RadioButton rd_male, rad_female;
     Bitmap image;
@@ -207,6 +207,16 @@ public class EmployeeActivity extends AppCompatActivity {
                 imageview.setImageBitmap(BitmapFactory.decodeByteArray(employee.getImage(), 0 , employee.getImage().length));
             }
         });
+
+
+        bt_exit = (Button) findViewById(R.id.exit_bt);
+        bt_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 
 
 
