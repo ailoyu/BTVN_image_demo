@@ -109,7 +109,7 @@ public class DepartmentActivity extends AppCompatActivity {
         });
 
 
-        bt_exit = (Button) findViewById(R.id.exit_bt);
+        bt_exit = (Button) findViewById(R.id.btExit);
         bt_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
