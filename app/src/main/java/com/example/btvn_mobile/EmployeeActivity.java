@@ -216,11 +216,7 @@ public class EmployeeActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
-
-
+        
     }
 
     @Override
